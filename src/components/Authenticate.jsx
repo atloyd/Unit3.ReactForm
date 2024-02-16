@@ -15,12 +15,13 @@ export default function Authenticate({ token }) {
 		} catch (error) {
 			setError(error.message);
 		}
+		console.log(token);
 	}
 
 	return (
 		<>
 			<h2>Authenticate</h2>
-            {error && <p>{error}</p>}
+			{error && <p>{error}</p>}
 			<button onClick={handleClick}>Authenticate Token</button>
 		</>
 	);
