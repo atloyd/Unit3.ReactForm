@@ -29,6 +29,7 @@ export default function SignUpForm({ setToken }) {
 
 	return (
 		<>
+		<div id='signUpForm'>
 			<h2>Sign Up Here!</h2>
 			{error && <p>{error}</p>}
 
@@ -51,6 +52,7 @@ export default function SignUpForm({ setToken }) {
 				</label>
 				<button>Submit</button>
 			</form>
+		</div>
 		</>
 	);
 }
